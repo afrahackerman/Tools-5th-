@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Afra's Uni Routine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fdfdfd;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(42, 54, 42);
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: auto;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    th, td {
+      border: 1px solid blue;
+      padding: 8px;
+    }
+
+    thead th {
+      background: #eef6ff;
+      text-align: center;
+    }
+
+    th[scope="row"] {
+      background: #f9f9f9;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    td.center {
+      text-align: center;
+    }
+
+    td.break {
+      background-color: beige;
+      text-align: center;
+      font-style: italic;
+    }
+
+    /* Optional hover effect */
+    tbody td:hover {
+      background-color: #c3666f;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Uni Routine</h1>
+
+  <table>
+    <caption>Weekly Class Schedule</caption>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>8:20–9:10</th>
+        <th>9:10–10:00</th>
+        <th>10:00–10:50</th>
+        <th>10:50–11:40</th>
+        <th>11:40–12:30</th>
+        <th>12:30–1:20</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">SAT</th>
+        <td>MMES theory</td>
+        <td>URED</td>
+        <td class="center">MDP</td>
+        <td class="break">(Break)</td>
+        <td colspan="2">TOOLS</td>
+      </tr>
+
+      <tr>
+        <th scope="row">SUN</th>
+        <td colspan="2">MMES theory</td>
+        <td>CA</td>
+        <td class="center">COMPILER theory</td>
+        <td class="break">(Break)</td>
+        <td>URED</td>
+      </tr>
+
+      <tr>
+        <th scope="row">MON</th>
+        <td colspan="2">CA</td>
+        <td colspan="2">COMPILER lab</td>
+        <td colspan="2">COMPILER theory</td>
+      </tr>
+
+      <tr>
+        <th scope="row">TUE</th>
+        <td colspan="2">MMES lab</td>
+        <td colspan="2">SAD</td>
+        <td colspan="2">TOOLS</td>
+      </tr>
+
+      <tr>
+        <th scope="row">WED</th>
+        <td>SAD</td>
+        <td class="break">(Break)</td>
+        <td colspan="2">EEE theory</td>
+        <td colspan="2">EEE lab</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

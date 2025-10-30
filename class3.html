@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Al-Afiyah Hospital Medical Form</title>
+  <link rel="stylesheet" href="hospital form.css">
+</head>
+<body>
+    <div class="header">
+        
+        <a href="https://alafiyahhospital.com/"><img src="hospital logo.jpg" alt="Al Afiyah Hospital Logo" class="hospital-logo">
+       </a>
+         <div>
+            <h1>Medical Form</h1>
+            <p>Al-Afiyah Hospital & Diagnostics Centre Limited</p>
+        </div>
+    </div>
+
+    <form>
+        <div class="form-section">
+            <h2>Form Details</h2>
+            <div class="form-group">
+                <label for="record_date">Date:</label>
+                <input type="date" id="record_date" name="record_date">
+            </div>
+            <div class="form-group">
+                <label for="record_number">Record Number:</label>
+                <input type="text" id="record_number" name="record_number">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Patient Information</h2>
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Health History</h2>
+            <div class="form-group">
+                <label for="illness_history">History of serious illnesses?</label>
+                <textarea id="illness_history" name="illness_history" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="medications">Are you taking any medications?</label>
+                <textarea id="medications" name="medications" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Family History</h2>
+            <div class="form-group">
+                <label for="genetic_history">History of genetic diseases?</label>
+                <textarea id="genetic_history" name="genetic_history" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="family_illnesses">Family serious illnesses?</label>
+                <textarea id="family_illnesses" name="family_illnesses" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Health Insurance Information</h2>
+            <div class="form-group">
+                <label for="insurance_provider">Insurance Provider:</label>
+                <input type="text" id="insurance_provider" name="insurance_provider">
+            </div>
+            <div class="form-group">
+                <label for="policy_number">Policy Number:</label>
+                <input type="text" id="policy_number" name="policy_number">
+            </div>
+            <div class="form-group">
+                <label for="doctors_notes">Doctor's Notes:</label>
+                <textarea id="doctors_notes" name="doctors_notes" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section multimedia">
+            <h2>Multimedia</h2>
+            <div class="form-group">
+                <label>Audio Clip:</label>
+                <audio controls src="music1.mp3">Your browser does not support the audio element.</audio>
+            </div>
+            <div class="form-group">
+                <label>Video Clip of our hospital:</label>
+                <video controls src="video1.mp4">Your browser does not support the video element.</video>
+            </div>
+            <div class="form-group">
+                <label>You can find out more on our hospital in youtube:</label>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hCGvOU1PSwA?si=mu6RXWVfSdNv9XmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
