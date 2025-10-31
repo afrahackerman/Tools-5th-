@@ -82,22 +82,25 @@ console.log(Array.isArray(friends)) //true as eta array
 let data1=[12,23,43,54];console.log(data1);
 let data2=[32,65,87,45];console.log(data2);
 data1=data1.concat(data2) //data1 e data2 link!
+data1.push(100);
 console.log(data1); //new merged data with 8 values
 console.log(data1.concat(data2)); //concatenate data2 abro but not storing! so data 1 ager tai tkbe lenght
 
 const capital="Muscat"
+console.log(capital.indexOf("g"));//-1 as g nai
 console.log(capital.length)
 console.log(capital[3]);//3rd index letter=c
 console.log(capital.toLowerCase());console.log(capital.toUpperCase());
 
-const name="   Afra is nice af";
+const name="    Afra is nice af  ";
 console.log(name) ;console.log(name.trim()); //cuts off space!
-console.log(name.slice(3,9));
+console.log(name.slice(3,9));//3 teke 8 porjonto
+console.log(name.replace("nice","good"));//replaces nice with good
 console.log(name.split(""));
 console.log(name.split("a")); //splits where a
 
 const firstn="Afra"; const lastn="Ackerman";
-const fulln=firstn+" "+lastn;
+const fulln=firstn+" "+lastn; //console.log(firstn + " " + lastn);
 console.log(fulln);
 console.log(firstn.concat("").concat(lastn)); //2ways
 
@@ -120,11 +123,51 @@ function ackerman(x){
     if (x % 2 === 0) return "Even Number";
     else return "Odd Number";
 }
-console.log(ackerman(64));
+console.log(ackerman(64)); console.log(ackerman("number"));
 
-let apple_price= parseInt("Four hundred");
-console.log(typeof(apple_price));
-if(apple_price==="NaN") 
-console.log(apple_price)
-else 
-console.log("Is not a number");
+let apple_price= parseInt("400tk");
+console.log(apple_price);
+if(apple_price=="400") console.log(apple_price) //data type diff 400 !== "400"
+else console.log("Is not a number");
+
+function showArray(arr) {
+    console.log("Array elements:");
+    for(let i=0; i<arr.length; i++) {
+        console.log("arr["+i+"]",arr[i]);
+    }
+}
+sampleArray = [10, "aFRA", 30, afra, true];
+showArray(sampleArray);
+console.log(typeof(sampleArray.indexOf("aFRA")));
+
+
+function filterPositive(numbers) {
+    let positive = [];
+    for(let i =0; i < numbers.length; i++) {
+        if(numbers[i] > 0) positive.push(numbers[i]);
+    }
+    return positive;
+}
+const result = [-4, 2, -7, 9, 5];
+console.log(filterPositive(result)); // [2, 9, 5]
+
+function calculateSalary(baseSalary, bonusPercent) {
+    let bonus = baseSalary * (bonusPercent / 100);
+    let total = baseSalary + bonus;
+    return total;
+}
+let finalSalary = calculateSalary(20000, 10);
+console.log("Total Salary =", finalSalary);
+
+function add(a, b) {
+     console.log(a + b);return a+b;
+}
+function average(x, y) {
+    return add(x, y) / 2;
+}
+console.log("Avg is =",average(6, 4)); // Output: 5
+
+function greet(name="Guest") {
+  console.log("Welcome", name);
+}
+greet("Afra"); // Welcome Afra
