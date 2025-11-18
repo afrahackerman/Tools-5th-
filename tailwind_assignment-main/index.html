@@ -26,59 +26,61 @@
 </head>
 
 <body class="h-svh">
+
+  <!-- NAVBAR SECTION -->
   <header>
-    <nav
-      class="h-[3rem] flex items-center justify-between px-4 fixed top-0 w-full z-50 sm:px-0 sm:w-[95%] sm:left-8 bg-base-100 shadow-sm">
-      <div class="h-full">
-        <a href="#">
-          <img src="assets/logo.png" class="h-full">
-        </a>
-      </div>
-      <div class="sm:w-[60%] flex items-center justify-between">
-        <ul class="hidden sm:w-[80%] sm:flex sm:justify-end sm:gap-12">
-          <li><a href="#" class="text-[#252432]">Home</a></li>
-          <li><a href="#" class="text-[#8987A1]">Shop</a></li>
-          <li><a href="#" class="text-[#8987A1]">About Us</a></li>
-        </ul>
-        <div class="flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="h-6">
-            <path
-              d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z" />
-          </svg>
-          <p class="ml-2 text-[1.25rem]">Cart ($56)</p>
+    <nav class="h-20 flex justify-between px-4 fixed top-0 w-full z-50 sm:px-0 sm:w-[95%] sm:left-8">
+        <div class="h-full"> <!--full height-->
+            <a href="#"><img src="assets/logo.png" class="h-full">
+            </a>
         </div>
-      </div>
+        <div class="sm:w-[60%] flex items-center justify-between">
+            <ul class="hidden sm:w-[80%] sm:flex sm:justify-end  sm:gap-12">
+                    <li><a href="#" class="text-[#252432]">Home</a></li>
+                    <li><a href="#" class="text-[#8987A1]">Shop</a></li>
+                    <li><a href="#" class="text-[#8987A1]">About Us</a></li>
+            </ul>
+            <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="h-6">
+                        <path
+                            d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z" />
+                    </svg>
+                    <p class="ml-2 text-[1.25rem]">Cart ($56)</p>
+            </div>
+         </div>
     </nav>
 
-    <!-- BANNER SECTION -->
-    <section class="max-w-[1140px] align-middle mx-auto ">
-      <div class="mt-[4.75rem] flex flex-col sm:flex-row sm:mt-24 sm:h-[80%] sm:items-end">
-        <div class="sm:order-2 sm:w-[1140px] sm:h-[461px]"></div>
-      </div>
+    <!----- BANNER sec--->
+    <section class="max-w-[1366px] mx-auto px-4"> 
+         <div class="mt-19 flex flex-col sm:flex-row sm:mt-24 sm:h-[80%] sm:items-end">
+             <!--<div class="sm:order-2 sm:w-[1140px] sm:h-[461px]"></div> -->
+         </div>
+    
+        <div class="mt-19 flex flex-col sm:flex-row sm:mt-24 sm:h-[80%] sm:items-end">
+            <div class="sm:order-2 sm:w-[1140px] sm:h-[461px]">
+                <img src="assets/hero-flower.png" alt="Hero flower" class="w-full h-auto object-contain sm:w-[85%] sm:h-full sm:-mt-8" />
+            </div>
 
-      <div class="mt-[4.75rem] flex flex-col sm:flex-row sm:mt-24 sm:h-[80%] sm:items-end">
-        <div class="sm:order-2 sm:w-[1140px] sm:h-[461px]">
-          <img src="assets/hero-flower.png" alt="Hero flower"
-            class="w-full h-auto object-contain sm:w-[85%] sm:h-full sm:-mt-8" />
+            <div class=" sm:w-[50%] sm:px-4">
+                <p class="noto-serif-font font-bold px-4 text-2xl text-[#E95A08] mt-5 sm:text-[4.06rem] sm:px-0">
+                  <span class="text-[#000000]">ALWAYS</span> FRESH <br> FLOWERS</p>
+                <p
+                    class="px-4 inter-font text-xl font-medium text-[rgba(0,0,0,0.50)] mt-[.812rem] sm:px-0 sm:text-[1.375rem] sm:font-[400]">
+                    Indulge your
+                    senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms,
+                    we
+                    offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
         </div>
-        <div class="sm:w-[50%] sm:px-4">
-          <p class="noto-serif-font font-bold px-4 text-2xl text-[#E95A08] mt-7 sm:text-[4.06rem] sm:px-0">
-            <span class="text-[#000000]">ALWAYS</span> FRESH <br> FLOWERS</p>
-          <p
-            class="px-4 inter-font text-[.875rem] font-medium text-[rgba(0,0,0,0.50)] mt-[.812rem] sm:px-0 sm:text-[1.375rem] sm:font-[400]">
-            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
-            blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
-          </p>
-        </div>
-      </div>
-    </section>
+     <section> 
+
   </header>
 
-<!-- MAIN CONTENT -->
-<main class="w-[1140px] h-[1187px] align-middle mx-auto">
+<!-- MAIN-->
+<main container="w-[1140px] h-[1187px] align-middle mx-auto">
 
-  <!-- 🌼 Flower Section Container -->
-  <div class=" mx-auto bg-base-100 rounded-lg shadow-sm p-4 flex justify-center items-center">
+  <!-- 🌼 Flower Container -->
+  <div class=" mx-auto bg-base-100 rounded-lg p-15 flex justify-center items-center">
 
     <section class=" mb-12 sm:mb-36">
       <div>
@@ -198,8 +200,7 @@
                         to
                         exotic blooms, we offer a wide variety of fresh.</li>
                     <li class="mb-4 sm:mb-5">Indulge your senses with the beauty and fragrance of our fresh flower shop.
-                        From classic roses
-                        to
+                        From classic roses to
                         exotic blooms, we offer a wide variety of fresh.</li>
                     <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
                         to
@@ -212,12 +213,11 @@
         <!----------------------- LATEST DEAL SECTION ---------------------->
         <section class="px-4 mb-16">
             <h1 class="noto-serif-font text-2xl font-bold text-center mb-4 sm:text-[3.125rem]"><span
-                    class="text-[#E95A08]">Latest</span>
-                Deals</h1>
+                    class="text-[#E95A08]">Latest</span>Deals
+            </h1>
             <p
                 class="inter-font text-[.875rem] px-6 font-medium text-center text-[rgba(0,0,0,0.50)] mb-4 sm:text-[1.375rem] sm:px-10 sm:mb-16">
-                Indulge your
-                senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we
                 offer a wide variety of fresh.</p>
             <div class="flex flex-col gap-5 sm:flex-row sm:mx-auto sm:justify-center">
 
@@ -257,42 +257,44 @@
                 </div>
         </section>
 
-
-</main>
-
-
-  <!--Join part-->
-  <section
-            class="bg-[url(assets/news-letter-bg.png)] h-[17rem] bg-no-repeat bg-cover bg-center relative sm:h-[30rem]">
-            <div class="absolute inset-0 m-0 p-0 bg-[rgba(0,0,0,0.40)] flex flex-col items-center justify-center">
-                <h1 class="noto-serif-font font-bold text-[1.25rem] text-[#FFFFFF] mb-[1.44rem] sm:text-[3.125rem]">Join
-                    the colorful Bunch
-                </h1>
-                <div class="inter-font  w-[85%] h-[3.125rem] flex sm:w-[70%]">
+<!--Join part main er bitor -->
+  <section class="bg-[url(assets/news-letter-bg.png)] h-533 bg-no-repeat bg-cover bg-center relative sm:h-120">
+    <div class="absolute inset-0 m-0 p-0 bg-[rgba(0,0,0,0.40)] flex flex-col items-center justify-center">
+      <h1 class="noto-serif-font font-bold text-[1.25rem] text-[#FFFFFF] mb-[1.44rem] sm:text-[3.125rem]">Join the colorful Bunch</h1>
+        <div class="inter-font  w-[85%] h-15 sm:w-[70%] flex">
                     <input type="email" placeholder="Write email"
                         class="font-[500] placeholder-[rgba(0,0,0,0.40)] h-full bg-[#ffffff] w-[70%] p-[1.25rem] outline-0 text-[1.1rem] sm:w-[80%]">
                     <button type="submit"
                         class="h-full bg-[#E95A08] w-[30%] cursor-pointer text-[#FFFFFF] font-[600] text-[1.1rem] sm:w-[20%]">Subscribe</button>
                 </div>
             </div>
-        </section>
 
-  <!--Footer-->
-  <footer class="max-w-[1366px] mx-auto mt-[3.125rem] px-4 inter-font font-medium ">
-    <div class="grid grid-cols-1 gap-7 sm:h-[21.75rem] sm:grid-cols-3 sm:gap-x-[6.8rem] sm:w-[90%] sm:mx-auto">
-      <div class="flex flex-col sm:justify-center">
+  </section> 
+
+<!--Footer within main-->
+<footer class="max-w-[1366px] mx-auto mt-12.5 px-4 inter-font text-[16px] ">
+   
+  <div class="grid grid-cols-1 gap-7 sm:h-87 sm:grid-cols-3 sm:gap-x-[6.8rem] sm:w-[90%] sm:mx-auto">
+      <div class="flex flex-col sm:justify-left">
         <a href="#"><img src="assets/logo.png" class="h-[6.81rem] sm:h-[5rem]"></a>
         <p class="text-[rgba(0,0,0,0.50)] mt-4 sm:text-[1.375rem]">Indulge your senses with the beauty and fragrance of
           our fresh flower shop.</p>
       </div>
-      <ul class="text-[#6B7280] grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-[6.8rem]">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <div class="w-[13.5rem] h-[2.25rem] flex justify-between items-center">
+      
+      <ul class="text-[#6B7280] grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-[0.3rem] h-70">
+                <li class="sm:order-1"><a href="#">Home</a></li>
+                <li class="sm:order-2"><a href="#">About Us</a></li>
+                <li class="sm:order-3"><a href="">Blog</a></li>
+                <li class="sm:order-4"><a href="#">FAQ</a></li>
+                <li class="sm:order-5"><a href="#">Contact Us</a></li>
+                <li class="sm:order-1"><a href="#">Features</a></li>
+                <li class="sm:order-2"><a href="#">Pricing</a></li>
+                <li class="sm:order-3"><a href="#">Privacy Policy</a></li>
+                <li class="sm:order-4"><a href="#">Terms of Service</a></li>
+                <li class="sm:order-5"><a href="#">Help Center</a></li>
+            </ul>
+
+      <div class="w-54 h-20 flex justify-between items-center">
         <a href="#"><img src="assets/icon-linkedin.png" class="h-fit"></a>
         <a href="#"><img src="assets/icon-twitter.png" class="h-fit"></a>
         <a href="#"><img src="assets/icon-facebook.png" class="h-fit"></a>
@@ -300,6 +302,7 @@
       </div>
     </div>
   </footer>
-</body>
+</main>
 
+</body>
 </html>
